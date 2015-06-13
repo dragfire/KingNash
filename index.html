@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>KingNash</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Devajit Asem" />
+    <meta name="description" content="A strategy Game" />
+    <link href="css/kingnash.index.css" rel="stylesheet" />
+    <style>
+        @font-face {
+            font-family: Slicker;
+            src: url(fonts/Slicker.ttf);
+        }
+        * {
+            -webkit-user-select: none;
+            -o-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            padding: 0px;
+            box-shadow: none;
+            font-family: Slicker;
+            font-size: 14px;
+            word-wrap: normal;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="gameBoard">
+        <h1>KingNash</h1>
+        <div id="board">
+            <div class="hor_lines" id="hline1"></div>
+            <div class="hor_lines" id="hline2"></div>
+            <div class="hor_lines" id="hline3"></div>
+            <div class="ver_lines" id="vline1"></div>
+            <div class="ver_lines" id="vline2"></div>
+            <div class="ver_lines" id="vline3"></div>
+            <div class="side_ver_lines_long" id="ver_line_long1"></div>
+            <div class="side_ver_lines_long" id="ver_line_long2"></div>
+            <div class="side_ver_lines_short" id="ver_line_short1"></div>
+            <div class="side_ver_lines_short" id="ver_line_short2"></div>
+            <div class="hor_lines_side" id="hor_lines_side1"></div>
+            <div class="hor_lines_side" id="hor_lines_side2"></div>
+            <div class="slant_lines" id="sline1"></div>
+            <div class="slant_lines" id="sline2"></div>
+            <div class="slant_lines" id="sline3"></div>
+            <div class="slant_lines" id="sline4"></div>
+            <div class="lslant_lines" id="lsline1"></div>
+            <div class="lslant_lines" id="lsline2"></div>
+            <div class="bro_beads_A_quad">
+                <div class="kingA" id="beadA1">
+                    <p class="K AK">K</p>
+                </div>
+                <div class="bro_beads_A" id="beadA2">
+                    <p class="A">A</p>
+                </div>
+                <div class="bro_beads_A" id="beadA3">
+                    <p class="A">A</p>
+                </div>
+                <div class="bro_beads_A" id="beadA4">
+                    <p class="A">A</p>
+                </div>
+                <div class="bro_beads_A" id="beadA5">
+                    <p class="A">A</p>
+                </div>
+                <div class="bro_beads_A" id="beadA6">
+                    <p class="A">A</p>
+                </div>
+                <div class="bro_beads_A" id="beadA7">
+                    <p class="A">A</p>
+                </div>
+                <div class="bro_beads_A" id="beadA8">
+                    <p class="A">A</p>
+                </div>
+                <div class="bro_beads_A" id="beadA9">
+                    <p class="A">A</p>
+                </div>
+                <div class="bro_beads_A" id="beadA10">
+                    <p class="A">A</p>
+                </div>
+                <div class="bro_beads_A" id="beadA11">
+                    <p class="A">A</p>
+                </div>
+                <div class="bro_beads_A" id="beadA12">
+                    <p class="A">A</p>
+                </div>
+                <div class="bro_beads_A" id="beadA13">
+                    <p class="A">A</p>
+                </div>
+                <div class="bro_beads_A" id="beadA14">
+                    <p class="A">A</p>
+                </div>
+                <div class="bro_beads_A" id="beadA15">
+                    <p class="A">A</p>
+                </div>
+                <div class="bro_beads_A" id="beadA16">
+                    <p class="A">A</p>
+                </div>
+            </div>
+            <div class="bro_beads_B_quad">
+                <div class="kingB" id="beadB1">
+                    <p class="K BK">K</p>
+                </div>
+                <div class="bro_beads_B" id="beadB2">
+                    <p class="B">B</p>
+                </div>
+                <div class="bro_beads_B" id="beadB3">
+                    <p class="B">B</p>
+                </div>
+                <div class="bro_beads_B" id="beadB4">
+                    <p class="B">B</p>
+                </div>
+                <div class="bro_beads_B" id="beadB5">
+                    <p class="B">B</p>
+                </div>
+                <div class="bro_beads_B" id="beadB6">
+                    <p class="B">B</p>
+                </div>
+                <div class="bro_beads_B" id="beadB7">
+                    <p class="B">B</p>
+                </div>
+                <div class="bro_beads_B" id="beadB8">
+                    <p class="B">B</p>
+                </div>
+                <div class="bro_beads_B" id="beadB9">
+                    <p class="B">B</p>
+                </div>
+                <div class="bro_beads_B" id="beadB10">
+                    <p class="B">B</p>
+                </div>
+                <div class="bro_beads_B" id="beadB11">
+                    <p class="B">B</p>
+                </div>
+                <div class="bro_beads_B" id="beadB12">
+                    <p class="B">B</p>
+                </div>
+                <div class="bro_beads_B" id="beadB13">
+                    <p class="B">B</p>
+                </div>
+                <div class="bro_beads_B" id="beadB14">
+                    <p class="B">B</p>
+                </div>
+                <div class="bro_beads_B" id="beadB15">
+                    <p class="B">B</p>
+                </div>
+                <div class="bro_beads_B" id="beadB16">
+                    <p class="B">B</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="options" class="menu">
+        <p id="close">x</p>
+        <ul>
+            <li>Continue</li>
+            <li>New Game</li>
+            <li>Settings</li>
+            <li>Multiplayer</li>
+            <li>Help</li>
+            <li>About</li>
+            <li>Quit</li>
+        </ul>
+    </div>
+    <div id="wrongMove">
+        <h2>Wrong Move</h2>
+    </div>
+    <script src="js/jquery-2.1.0.min.js"></script>
+    <script src="js/kingnash.game.js"></script>
+    <script src="js/kingnash.controller.js"></script>
+    <script src="js/kingnash.controller.kingdomA.js"></script>
+    <script src="js/kingnash.controller.kingdomB.js"></script>
+    <script src="js/kingnash.movement.js"></script>
+</body>
+
+</html>
